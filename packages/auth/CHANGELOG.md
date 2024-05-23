@@ -1,5 +1,11 @@
 # auth
 
+## 0.0.6
+
+### Patch Changes
+
+- bump auth v0.0.6
+
 ## 0.0.5
 
 ### Patch Changes
