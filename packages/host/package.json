@@ -11,6 +11,7 @@
     "typecheck": "tsc",
     "bundle:ios": "react-native webpack-bundle --platform ios --entry-file index.js --dev false",
     "bundle:android": "react-native webpack-bundle --platform android --entry-file index.js --dev false",
+    "build-android-apk": "cd android &&./gradlew assembleRelease",
     "pods": "(cd ios && bundle install && bundle exec pod install)",
     "pods:update": "(cd ios && bundle exec pod update)",
     "align-deps": "rnx-align-deps --write",
@@ -60,27 +61,27 @@
     {
       "name": "auth",
       "type": "internal",
-      "url": "https://github.com/callstack/super-app-showcase"
+      "url": "https://github.com/vannt1991/super-app-showcase"
     },
     {
       "name": "booking",
       "type": "internal",
-      "url": "https://github.com/callstack/super-app-showcase"
+      "url": "https://github.com/vannt1991/super-app-showcase"
     },
     {
       "name": "dashboard",
       "type": "internal",
-      "url": "https://github.com/callstack/super-app-showcase"
+      "url": "https://github.com/vannt1991/super-app-showcase"
     },
     {
       "name": "shopping",
       "type": "internal",
-      "url": "https://github.com/callstack/super-app-showcase"
+      "url": "https://github.com/vannt1991/super-app-showcase"
     },
     {
       "name": "news",
       "type": "external",
-      "url": "https://github.com/callstack/news-mini-app-showcase"
+      "url": "https://github.com/vannt1991/news-mini-app-showcase"
     }
   ],
   "rnx-kit": {
