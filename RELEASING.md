@@ -17,6 +17,7 @@ Mini-apps are released by creating and bumping its version via changeset. Please
 1. **Run Changeset Version Command**: Execute the following command to create a changeset:
 
 ```bash
+pnpm changeset add
 pnpm changeset version
 ```
 
