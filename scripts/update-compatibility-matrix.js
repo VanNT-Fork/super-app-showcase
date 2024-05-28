@@ -91,7 +91,7 @@ function getExternalDependencyVersion(dependency) {
   // Stub function to obtain the version of an external dependency.
   // Implement the logic to fetch the version from the remote location here.
   // As of now, the only external dependency is the news mini-app, and it's version is hardcoded here
-  return "0.0.4";
+  return "0.0.5";
 }
 
 function discoverPackagesWithFederatedDependencies() {
