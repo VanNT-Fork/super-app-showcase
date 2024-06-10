@@ -5,6 +5,7 @@ import {NavigationContainer} from '@react-navigation/native';
 import MainNavigator from './navigation/MainNavigator';
 import SplashScreen from './components/SplashScreen';
 import ErrorBoundary from './components/ErrorBoundary';
+import {Text} from 'react-native';
 
 const AuthProvider = React.lazy(() =>
   Federated.importModule('auth', './AuthProvider'),
@@ -14,6 +15,18 @@ const SignInScreen = React.lazy(() =>
 );
 
 const App = () => {
+  const config = {
+    screens: {
+      Chat: 'feed/:sort',
+      News: 'News',
+    },
+  };
+
+  const linking = {
+    prefixes: ['https://mychat.com', 'mychat://'],
+    config,
+  };
+
   return (
     <ErrorBoundary name="AuthProvider">
       <React.Suspense fallback={<SplashScreen />}>
@@ -33,6 +46,8 @@ const App = () => {
 
             return (
               <NavigationContainer
+                linking={linking}
+                fallback={<Text>Failure...</Text>}
                 onReady={() => RNBootSplash.hide({fade: true, duration: 500})}>
                 <MainNavigator />
               </NavigationContainer>
