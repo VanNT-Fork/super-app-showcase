@@ -1,6 +1,6 @@
 {
   "name": "shopping",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "private": true,
   "scripts": {
     "start": "react-native webpack-start --port 9001",
